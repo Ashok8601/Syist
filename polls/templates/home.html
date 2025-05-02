@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Syist</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}" />
+</head>
+<body>
+  <header>
+    <div class="logo">Syist</div>
+    <input type="text" placeholder="Search..." class="search-bar">
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </header>
+
+  <nav class="sidebar" id="sidebar">
+    <div class="close-btn" onclick="toggleMenu()">×</div>
+    <h2 class="menu-title">
+      Ashok Kumar Yadav<br>
+      <span class="sub-title">(MrSyist)</span>
+    </h2>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'services' %}">Services</a></li>
+      <li><a href="{% url 'projects' %}">Projects</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="{% url 'login' %}"><button>Login</button></a>
+      <a href="{% url 'signup' %}"><button>Signup</button></a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="overlay">
+      <div class="hero-content">
+        <div class="top-label">turn your thoughts into reality</div>
+        <h1>Welcome to <strong><br />Syist Group</strong></h1>
+        <h2>Learn <strong>Python</strong></h2>
+        <p>
+          Confused about which course to take?<br>
+          We've got you covered! Browse courses and discover the best option for you. It's free!<br><br>
+          <strong>CodeWithHarry</strong> is my effort to teach the basics and those coding techniques in a short time that took me years to master.
+        </p>
+        <div class="buttons">
+          <button class="primary">Explore Courses</button>
+          <button class="secondary">Read Articles</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Main</h4>
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+          <li><a href="#">Work With Us</a></li>
+          <li><a href="#">My Gear</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Notes</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Refund</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Social</h4>
+        <ul>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter (X)</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Your Website Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
