@@ -4,7 +4,7 @@ from django.urls import reverse
 from django.urls import path
 from polls import views
 from django.urls import path
-from .views import robots_txt
+from polls.views import robots_txt
 
 class StaticViewSitemap(Sitemap):
     priority = 0.5
