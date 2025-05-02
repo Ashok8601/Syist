@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://syist-group.onrender.com/sitemap.xml
