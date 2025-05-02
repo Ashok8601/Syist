@@ -22,5 +22,12 @@ def login_view(request):
 
 def signup_view(request):
     return render(request, 'signup.html')
+def robots_txt(request):
+    lines = [
+        "User-agent: *",
+        "Allow: /",
+        "Sitemap: https://syist-group.onrender.com/sitemap.xml"
+    ]
+    return HttpResponse("\n".join(lines), content_type="text/plain")
 
 
