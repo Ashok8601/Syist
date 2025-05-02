@@ -2,7 +2,9 @@ from django.contrib.sitemaps.views import sitemap
 from django.contrib.sitemaps import Sitemap
 from django.urls import reverse
 from django.urls import path
-from polls import views  # जहाँ आपने views बनाए हैं
+from polls import views
+from django.urls import path
+from .views import robots_txt
 
 class StaticViewSitemap(Sitemap):
     priority = 0.5
@@ -24,4 +26,5 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('login/', views.login_view, name='login'),
     path('signup/', views.signup_view, name='signup'),
+    path("robots.txt", robots_txt),
 ]
