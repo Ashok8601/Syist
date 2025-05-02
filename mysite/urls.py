@@ -1,9 +1,21 @@
+from django.contrib.sitemaps.views import sitemap
+from django.contrib.sitemaps import Sitemap
 from django.urls import path
-from polls  import views
+from polls import views  # जहाँ आपने views बनाए हैं
 
-from django.contrib import admin
+class StaticViewSitemap(Sitemap):
+    priority = 0.5
+    changefreq = 'weekly'
+
+    def items(self):
+        return ['home', 'services', 'projects', 'about', 'contact', 'login', 'signup']
+
+    def location(self, item):
+        return reverse(item)
+
 urlpatterns = [
-    path('admin/', admin.site.urls), 
+    path('sitemap.xml', sitemap, {'sitemaps': {'static': StaticViewSitemap}}, name='django.contrib.sitemaps.views.sitemap'),
+    
     path('', views.home, name='home'),
     path('services/', views.services, name='services'),
     path('projects/', views.projects, name='projects'),
@@ -11,5 +23,4 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('login/', views.login_view, name='login'),
     path('signup/', views.signup_view, name='signup'),
-
 ]
