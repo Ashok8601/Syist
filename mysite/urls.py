@@ -1,5 +1,6 @@
 from django.contrib.sitemaps.views import sitemap
 from django.contrib.sitemaps import Sitemap
+from django.urls import reverse
 from django.urls import path
 from polls import views  # जहाँ आपने views बनाए हैं
 
