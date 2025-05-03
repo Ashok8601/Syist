@@ -4,11 +4,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Syist</title>
-  <link rel="stylesheet" href="{% static 'home.css' %}" />
-
+  
+  <title>Syist Group - Learn Python, Coding, and More</title>
+  <meta name="description" content="Syist Group helps you learn Programming, explore tutorials, and boost your programming skills. grow your skills and make future brighter.">
+  <meta name="keywords" content="Python, Coding, Learn Programming, Free Courses, Syist Group, MrSyist">
+  <meta name="author" content="Ashok Kumar Yadav">
+  <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="r05cmkjA1lRP0f2DXc1aFLOb7L4iykQDDcW2W7NG1kk" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://syist-group.onrender.com/" />
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Syist Group - Learn Python, Coding, and More">
+  <meta property="og:description" content="Explore free Python courses and tutorials with Syist Group. Turn your thoughts into reality.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://syist-group.onrender.com/">
+  <meta property="og:image" content="https://syist-group.onrender.com/static/images/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Syist Group - Learn Python, Coding, and More">
+  <meta name="twitter:description" content="Explore free Python courses and tutorials with Syist Group.">
+  <meta name="twitter:image" content="https://syist-group.onrender.com/static/images/og-image.jpg">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{% static 'home.css' %}" />
 </head>
+
 <body>
   <header>
     <div class="logo">Syist</div>
@@ -18,10 +41,7 @@
 
   <nav class="sidebar" id="sidebar">
     <div class="close-btn" onclick="toggleMenu()">×</div>
-    <h2 class="menu-title">
-      Ashok Kumar Yadav<br>
-      <span class="sub-title">(MrSyist)</span>
-    </h2>
+    <h1 class="menu-title">Ashok Kumar Yadav<br><span class="sub-title">(MrSyist)</span></h1>
     <ul>
       <li><a href="{% url 'home' %}">Home</a></li>
       <li><a href="{% url 'services' %}">Services</a></li>
@@ -38,13 +58,13 @@
   <section class="hero">
     <div class="overlay">
       <div class="hero-content">
-        <div class="top-label">turn your thoughts into reality</div>
-        <h1>Welcome to <strong><br />Syist Group</strong></h1>
-        <h2>Learn <strong>Python</strong></h2>
+        <h2 class="top-label">Turn your thoughts into reality</h2>
+        <h1>Welcome to <strong>Syist Group</strong></h1>
+        <h2>Learn <strong>Programming</strong> with MrSyist</h2>
         <p>
           Confused about which course to take?<br>
-          We've got you covered! Browse courses and discover the best option for you. It's free!<br><br>
-          <strong>CodeWithHarry</strong> is my effort to teach the basics and those coding techniques in a short time that took me years to master.
+          We've got you covered! Browse free and paid courses and discover your perfect learning path.<br><br>
+          <strong>CodeWithHarry</strong> is my inspiration, and Syist is my effort to teach you what took me years to learn.
         </p>
         <div class="buttons">
           <button class="primary">Explore Courses</button>
@@ -57,7 +77,7 @@
   <footer>
     <div class="footer-container">
       <div class="footer-section">
-        <h4>Main</h4>
+        <h3>Main</h3>
         <ul>
           <li><a href="{% url 'home' %}">Home</a></li>
           <li><a href="{% url 'contact' %}">Contact</a></li>
@@ -66,7 +86,7 @@
         </ul>
       </div>
       <div class="footer-section">
-        <h4>Learn</h4>
+        <h3>Learn</h3>
         <ul>
           <li><a href="#">Courses</a></li>
           <li><a href="#">Tutorials</a></li>
@@ -74,7 +94,7 @@
         </ul>
       </div>
       <div class="footer-section">
-        <h4>Legal</h4>
+        <h3>Legal</h3>
         <ul>
           <li><a href="#">Terms</a></li>
           <li><a href="#">Privacy</a></li>
@@ -82,7 +102,7 @@
         </ul>
       </div>
       <div class="footer-section">
-        <h4>Social</h4>
+        <h3>Social</h3>
         <ul>
           <li><a href="#">GitHub</a></li>
           <li><a href="#">Twitter (X)</a></li>
@@ -92,10 +112,27 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 Your Website Name. All rights reserved.</p>
+      <p>&copy; 2025 Syist Group. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- Schema Markup for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Syist Group",
+    "url": "https://syist-group.onrender.com",
+    "logo": "https://syist-group.onrender.com/static/images/logo.png",
+    "sameAs": [
+      "https://github.com/yourgithub",
+      "https://www.youtube.com/@yourchannel",
+      "https://twitter.com/yourtwitter"
+    ]
+  }
+  </script>
+
+  <!-- Script -->
   <script>
     function toggleMenu() {
       const sidebar = document.getElementById("sidebar");
