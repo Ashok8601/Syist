@@ -3,11 +3,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>About | Syist</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Syist Group</title>
+  <meta name="description" content="Learn more about Syist Group - empowering learners with Python, web development, and practical coding knowledge.">
+  <meta name="robots" content="index, follow">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 10px 20px;
+    }
+    nav a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a.active {
+      text-decoration: underline;
+    }
+    .about-section {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #004080;
+    }
+  </style>
 </head>
 <body>
-  <h1>About Page</h1>
-  <p>This is a dummy About page.</p>
+  <header>
+    <nav>
+      <a href="{% url 'home' %}">Home</a>
+      <a href="{% url 'about' %}" class="active">About</a>
+      <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <h1>About Syist Group</h1>
+      <p><strong>Syist Group</strong> is dedicated to helping individuals unlock their potential through coding. Founded by <strong>Ashok Kumar Yadav (MrSyist)</strong>, we focus on practical and beginner-friendly education in Python and web development.</p>
+
+      <p>Our platform aims to break down complex programming concepts into easy-to-understand tutorials, guides, and projects. Whether you're a complete beginner or looking to sharpen your skills, Syist is your trusted learning companion.</p>
+
+      <p>Join us in our mission to make coding education accessible, practical, and fun for everyone across India and beyond.</p>
+    </section>
+  </main>
 </body>
 </html>
