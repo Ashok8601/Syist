@@ -1,66 +1,74 @@
-{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Syist Group</title>
-  <meta name="description" content="Learn more about Syist Group - empowering learners with Python, web development, and practical coding knowledge.">
-  <meta name="robots" content="index, follow">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #004080;
-      color: white;
-      padding: 10px 20px;
-    }
-    nav a {
-      color: white;
-      margin-right: 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a.active {
-      text-decoration: underline;
-    }
-    .about-section {
-      max-width: 800px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      color: #004080;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आज की मेरी आवाज</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .home-button {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            background-color: #fff;
+            color: #333;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .home-button:hover {
+            background-color: #ddd;
+        }
+        .post-content {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="{% url 'home' %}">Home</a>
-      <a href="{% url 'about' %}" class="active">About</a>
-      <a href="{% url 'contact' %}">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="about-section">
-      <h1>About Syist Group</h1>
-      <p><strong>Syist Group</strong> is dedicated to helping individuals unlock their potential through coding. Founded by <strong>Ashok Kumar Yadav (MrSyist)</strong>, we focus on practical and beginner-friendly education in Python and web development.</p>
-
-      <p>Our platform aims to break down complex programming concepts into easy-to-understand tutorials, guides, and projects. Whether you're a complete beginner or looking to sharpen your skills, Syist is your trusted learning companion.</p>
-
-      <p>Join us in our mission to make coding education accessible, practical, and fun for everyone across India and beyond.</p>
-    </section>
-  </main>
+    <header>
+        <a href="/home" class="home-button">Home</a>
+        <h1>आज की मेरी आवाज</h1>
+    </header>
+    <div class="post-content">
+        <p>
+            आज की मेरी आवाज एक नई शुरुआत का प्रतीक है। यह आवाज उस शक्ति को व्यक्त करती है जो 
+            हर एक व्यक्ति में छिपी होती है, वो शक्ति जो किसी भी मुश्किल को पार कर सकती है। 
+            हम सब में कुछ खास होता है, और जब हम अपनी आवाज उठाते हैं, तो दुनिया हमारी बात सुनने 
+            लगती है। चाहे वो छोटे से कदम हो या बड़ी छलांग, हर आवाज की अहमियत होती है। 
+        </p>
+        <p>
+            इस पोस्ट के माध्यम से, मैं आपको यह याद दिलाना चाहता हूँ कि अपनी आवाज को दबाना मत, 
+            अपनी सोच को व्यक्त करो, और खुद पर विश्वास रखो। यह समय है बदलाव का, यह समय है 
+            अपनी पहचान बनाने का। चलिए, आज से हम अपनी आवाज को सुनने का अधिकार लेते हैं और 
+            दुनिया को दिखाते हैं कि हम कौन हैं। 
+        </p>
+    </div>
 </body>
 </html>
