@@ -1,13 +1,220 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Contact | Syist</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Syist Group - Get in touch with our team for Python programming courses, tutorials, and support. Learn to code with MrSyist.">
+  <meta name="keywords" content="Contact Syist Group, Python programming contact, learn Python, MrSyist support, Syist Group email">
+  <meta name="robots" content="index, follow">
+  <title>Contact Us | Syist Group - Learn Python Programming</title>
+  <style>
+    
+    /* Basic reset for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    margin-top: 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+main p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Follow Us section */
+section ul {
+    margin-top: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 1.1em;
+}
+
+section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+  </style>
 </head>
 <body>
-  <h1>Contact Page</h1>
-  <p>This is a dummy Contact page.</p>
+  <header>
+    <h1>Contact Syist Group</h1>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/courses">Courses</a> |
+      <a href="/about">About Us</a> |
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>We're Here to Help You Learn Python!</h2>
+      <p>Welcome to Syist Group's official contact page. Whether you're a beginner in programming, a student enrolled in our Python courses, or simply someone with a question about our tutorials, we are happy to help. Our team, led by Ashok Kumar Yadav (MrSyist), is dedicated to making your coding journey as smooth and enjoyable as possible.</p>
+
+      <p>Our platform offers structured Python programming courses for all levels. From basic syntax and data structures to advanced Python libraries, we cover everything you need to build real-world projects. But we also understand that sometimes you may have questions, feedback, or even business collaboration ideas. This is the right place for all of that!</p>
+    </section>
+
+    <section>
+      <h2>Contact Details</h2>
+      <ul>
+        <li><strong>Email:</strong> support@syistgroup.com</li>
+        <li><strong>Phone:</strong> +91-9876543210</li>
+        <li><strong>Office Hours:</strong> Monday to Saturday, 10:00 AM – 6:00 PM</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Send Us a Message</h2>
+      <form action="/submit-form" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Why Contact Us?</h2>
+      <p>At Syist Group, we believe in real-time support and community-driven learning. Whether you’re stuck in a loop or unsure how to proceed with a project, reaching out can often be the best way to move forward. We try to respond to all queries within 24–48 hours. We are also open to collaborations with schools, institutions, and coding clubs who wish to integrate Python into their curriculum.</p>
+
+      <p>If you're looking for a specific tutorial, want to suggest a topic, or report a bug in our platform, please don't hesitate. Every message helps us improve our services and become a better resource for learners.</p>
+
+      <p>Many of our students have successfully launched careers in software development, data science, and automation—thanks to our structured Python roadmap. If you're ready to take the next step, but have questions, we're just a message away!</p>
+    </section>
+
+    <section>
+      <h2>Follow Us on Social Media</h2>
+      <p>Stay connected with us on:</p>
+      <ul>
+        <li><a href="https://www.instagram.com/mr_syist">Instagram</a></li>
+        <li><a href="https://www.youtube.com/@MrSyist">YouTube</a></li>
+        <li><a href="https://github.com/mrsyist">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Syist Group. All rights reserved.</p>
+  </footer>
 </body>
 </html>
