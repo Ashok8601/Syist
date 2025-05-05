@@ -5,7 +5,7 @@ from django.urls import path
 from polls import views
 from django.urls import path
 from polls.views import robots_txt
-
+from django.urls import re_path
 class StaticViewSitemap(Sitemap):
     priority = 0.5
     changefreq = 'weekly'
