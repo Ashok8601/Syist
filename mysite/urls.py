@@ -15,7 +15,7 @@ class StaticViewSitemap(Sitemap):
     changefreq = 'weekly'
 
     def items(self):
-        return ['home', 'indo_pak','services', 'projects', 'about', 'contact', 'login', 'signup']
+        return ['home', 'indo_pak','services', 'projects', 'about', 'contact', 'login', 'signup','python']
 
     def location(self, item):
         return reverse(item)
@@ -32,5 +32,6 @@ urlpatterns = [
     path('signup/', views.signup_view, name='signup'),
     re_path(r'^robots\.txt$', serve, {'path': 'robots.txt', 'document_root': settings.STATIC_ROOT, 'content_type': 'text/plain'}),
     path('indo_pak/', views.indo_pak, name='indo_pak'),
+    path('python/', views.python, name='python'),
 
 ]
