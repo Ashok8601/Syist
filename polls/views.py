@@ -32,5 +32,5 @@ def robots_txt(request):
 def indo_pak(request):
     return render(request,'indo_pak.html')
 def python(request):
-    return render(request,'python_code.html')    
+    return render(request,'Python_code.html')    
 
