@@ -29,5 +29,6 @@ def robots_txt(request):
         "Sitemap: https://syist-group.onrender.com/sitemap.xml"
     ]
     return HttpResponse("\n".join(lines), content_type="text/plain")
-
+def indo_pak(request):
+    return render(request,'indo_pak.html')
 
