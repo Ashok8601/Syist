@@ -31,5 +31,6 @@ urlpatterns = [
     path('login/', views.login_view, name='login'),
     path('signup/', views.signup_view, name='signup'),
     re_path(r'^robots\.txt$', serve, {'path': 'robots.txt', 'document_root': settings.STATIC_ROOT, 'content_type': 'text/plain'}),
+    path('indo_pak/', views.indo_pak, name='indo_pak'),
 
 ]
