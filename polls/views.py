@@ -30,5 +30,5 @@ def robots_txt(request):
     ]
     return HttpResponse("\n".join(lines), content_type="text/plain")
 def indo_pak(request):
-    return render(request,'Indo_pak.html')
+    return render(request,'indo_pak.html')
 
