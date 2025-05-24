@@ -34,3 +34,6 @@ def indo_pak(request):
 def python(request):
     return render(request,'Python_code.html')    
 
+def python(request):
+    return render(request,'project.html')
+
