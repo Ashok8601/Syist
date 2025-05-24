@@ -33,5 +33,6 @@ urlpatterns = [
     re_path(r'^robots\.txt$', serve, {'path': 'robots.txt', 'document_root': settings.STATIC_ROOT, 'content_type': 'text/plain'}),
     path('indo_pak/', views.indo_pak, name='indo_pak'),
     path('python/', views.python, name='python'),
+    path('project/', views.project, name='project'),
 
 ]
