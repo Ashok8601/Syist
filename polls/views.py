@@ -8,8 +8,6 @@ def home(request):
 def services(request):
     return render(request, 'services.html')
 
-def projects(request):
-    return render(request, 'projects.html')
 
 def about(request):
     return render(request, 'about.html')
