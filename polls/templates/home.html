@@ -2,15 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SJL7CLVDBF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SJL7CLVDBF');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -70,7 +61,13 @@
       <a href="{% url 'signup' %}"><button>Signup</button></a>
     </div>
   </nav>
-
+     <!-- Slider -->
+  <div class="slider-container" id="slider">
+    <img src="{% static 'images/img1.png' %}"  class="active" alt="Slide 1">
+    <img src="{% static 'images/img2.png' %}"  alt="Slide 2">
+    <img src="{% static 'images/img3.png' %}"  alt="Slide 3">
+    <!-- More images -->
+  </div>
   <section class="hero">
     <div class="overlay">
       <div class="hero-content">
@@ -89,15 +86,60 @@
       </div>
     </div>
   </section>
+  
 
-  <footer>
-    <div class="footer-container">
+<a href="{% url 'contact' %}" style="text-decoration: none; color: inherit;">
+  <div class="card">
+    <img src="{% static 'images/img4.png' %}" alt="Web Development">
+    <div class="card-content">
+      <h2>Web Development</h2>
+      <p>
+        Learn HTML, CSS, JavaScript and modern frameworks to build responsive websites and web applications.
+      </p>
+    </div>
+  </div>
+</a>
+
+     <section class="courses-section">
+  <h3>Courses</h3>
+  <h2>Master Coding with Our Core Offerings</h2>
+
+  <div class="course-cards">
+    <div class="card">
+      <div class="icon">⚡</div>
+      <h4>Beginner-Friendly</h4>
+      <p>Step-by-step courses designed for absolute beginners to kickstart their coding journey.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📚</div>
+      <h4>Advanced Concepts</h4>
+      <p>Deep dive into advanced topics and frameworks to level up your skills.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💻</div>
+      <h4>Real-World Projects</h4>
+      <p>Learn by building real-world projects and gain hands-on experience.</p>
+    </div>
+  </div>
+</section>
+
+  <section class="coding-journey">
+  <h1>Start Your Coding Journey</h1>
+  <p>Learn coding step-by-step with India's most loved programming mentor.</p>
+  <a href="{% url 'home' %}" class="btn-start">Start Now</a>
+</section>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-row">
       <div class="footer-section">
         <h3>Main</h3>
         <ul>
           <li><a href="{% url 'home' %}">Home</a></li>
           <li><a href="{% url 'contact' %}">Contact</a></li>
-          <li><a href="https://ashok8601.github.io/Blog/">Work With Us</a></li>
+          <li><a href="#">Work With Us</a></li>
           <li><a href="#">My Gear</a></li>
         </ul>
       </div>
@@ -109,6 +151,9 @@
           <li><a href="#">Notes</a></li>
         </ul>
       </div>
+    </div>
+
+    <div class="footer-row">
       <div class="footer-section">
         <h3>Legal</h3>
         <ul>
@@ -127,10 +172,12 @@
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Syist Group. All rights reserved.</p>
-    </div>
-  </footer>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Syist Group. All rights reserved.</p>
+  </div>
+</footer>
 
   <!-- Schema Markup -->
   <script type="application/ld+json">
@@ -153,6 +200,26 @@
       const sidebar = document.getElementById("sidebar");
       sidebar.classList.toggle("active");
     }
-  </script>
+    
+
+
+  const images = document.querySelectorAll('.slider-container img');
+    let current = 0;
+
+    function showNextImage() {
+      images[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
+    }
+
+    setInterval(showNextImage, 500);
+    
+    
+    
+  let slideIndex = 0;
+  const slides = document.querySelector('.slides');
+  const totalSlides = slides.children.length;
+  
+   </script>
 </body>
 </html>
