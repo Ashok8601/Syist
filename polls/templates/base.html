@@ -1,0 +1,43 @@
+<!-- templates/base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{% block title %}Syist Group{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'home.css' %}" />
+</head>
+<body>
+
+  <!-- Common Header -->
+  {% include 'partials/header.html' %}
+
+  <!-- Main Content -->
+  {% block content %}
+  {% endblock %}
+
+  <!-- Common Footer -->
+  {% include 'partials/footer.html' %}
+
+  <!-- JS Scripts -->
+  <script>
+    function toggleMenu() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("active");
+    }
+
+    const images = document.querySelectorAll('.slider-container img');
+    let current = 0;
+
+    function showNextImage() {
+      images[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
+    }
+
+    setInterval(showNextImage, 500);
+  </script>
+
+</body>
+</html>
