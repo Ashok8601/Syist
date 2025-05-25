@@ -1,0 +1,18 @@
+<!-- templates/partials/header.html -->
+<header>
+  <div class="logo"><img src="{% static 'images/logo.png' %}" alt="Syist Group Logo" /></div>
+  <input type="text" placeholder="Search..." class="search-bar">
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+</header>
+
+<nav class="sidebar" id="sidebar">
+  <div class="close-btn" onclick="toggleMenu()">×</div>
+  <h1 class="menu-title">Ashok Kumar Yadav<br><span class="sub-title">(MrSyist)</span></h1>
+  <ul>
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'services' %}">Services</a></li>
+    <li><a href="{% url 'projects' %}">Projects</a></li>
+    <li><a href="{% url 'about' %}">About</a></li>
+    <li><a href="{% url 'contact' %}">Contact</a></li>
+  </ul>
+</nav>
