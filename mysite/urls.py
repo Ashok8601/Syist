@@ -34,5 +34,6 @@ urlpatterns = [
     path('indo_pak/', views.indo_pak, name='indo_pak'),
     path('python/', views.python, name='python'),
     path('project/', views.project, name='project'),
+    path('python_300_project/', views.python_300_project, name='python_300_project'),
 
 ]
