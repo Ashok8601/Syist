@@ -1,0 +1,380 @@
+{% extends 'base.html' % }
+{% block title %}Syist Group | 300 Interview Questions & 50 Python Programs{% endblock %}
+
+{% block head_extra %}
+  <meta name="description" content="Syist Group presents: 300 interview questions and 50 Python programs to crack interviews with confidence.">
+  <meta name="keywords" content="interview questions, python programs, Syist Group, job preparation, coding interview">
+  <meta name="author" content="Syist Group">
+  <style>
+    
+{% endblock %}
+
+  
+  <style>
+    { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; background: #f9f9f9; color: #333; }
+    h1, h2, h3 { color: #004080; }
+    pre { background: #eee; padding: 10px; border-left: 4px solid #004080; overflow-x: auto; }
+    section { margin-bottom: 40px; }
+    hr { border: none; border-top: 1px solid #ccc; margin: 40px 0; }
+    ol li { margin-bottom: 15px; }
+  </style>
+{% block content %}
+    <h1>Syist Group.com</h1>
+    <h2>300 Interview Questions & 50 Python Programs</h2>
+    <h3>इंटरव्यू फोड़ के रख दो (Interview Tod Ke Rakh Do)</h3>
+    <p>इस HTML पेज में आपको मिलेंगे 300 महत्वपूर्ण इंटरव्यू सवाल और 50 पायथन प्रोग्राम्स – हिंदी और इंग्लिश दोनों में।</p>
+   <section>
+    <h2>Top 300 Interview Questions with Answers</h2>
+    <ol>
+      <li><strong>What is Python?</strong><br>Python is a high-level, interpreted programming language known for its simplicity and readability.</li>
+      <li><strong>What is the difference between list and tuple in Python?</strong><br>List is mutable whereas Tuple is immutable.</li>
+      <li><strong>What is a dictionary in Python?</strong><br>A dictionary is a key-value pair data structure used to store data values like a map.</li>
+      <li><strong>What is PEP8?</strong><br>PEP8 is a Python style guide that defines how to format Python code for maximum readability.</li>
+      <li><strong>What is the difference between deep copy and shallow copy?</strong><br>Shallow copy copies references, deep copy copies actual objects recursively.</li>
+      <li><strong>Explain Python's memory management.</strong><br>It includes private heap space, garbage collection, and dynamic memory allocation.</li>
+      <li><strong>What are Python's key features?</strong><br>Simple, interpreted, object-oriented, dynamically typed, vast libraries.</li>
+      <li><strong>What is the use of 'with' statement?</strong><br>'with' handles resource management like file closing automatically.</li>
+      <li><strong>What is the difference between 'is' and '=='' in Python?</strong><br>'is' checks identity, '==' checks value equality.</li>
+      <li><strong>What are Python's data types?</strong><br>int, float, str, list, tuple, dict, set, bool, complex.</li>
+      <ol>
+  <li><strong>What is Python?</strong><br>Python is a high-level, interpreted programming language known for its simplicity and readability.</li>
+  <li><strong>What is the difference between list and tuple in Python?</strong><br>List is mutable whereas Tuple is immutable.</li>
+  <li><strong>What is a dictionary in Python?</strong><br>A dictionary is a key-value pair data structure used to store data values like a map.</li>
+  <li><strong>What is PEP8?</strong><br>PEP8 is a Python style guide that defines how to format Python code for maximum readability.</li>
+  <li><strong>What is the difference between deep copy and shallow copy?</strong><br>Shallow copy copies references, deep copy copies actual objects recursively.</li>
+  <li><strong>Explain Python's memory management.</strong><br>It includes private heap space, garbage collection, and dynamic memory allocation.</li>
+  <li><strong>What are Python's key features?</strong><br>Simple, interpreted, object-oriented, dynamically typed, vast libraries.</li>
+  <li><strong>What is the use of 'with' statement?</strong><br>'with' handles resource management like file closing automatically.</li>
+  <li><strong>What is the difference between 'is' and '=='' in Python?</strong><br>'is' checks identity, '==' checks value equality.</li>
+  <li><strong>What are Python's data types?</strong><br>int, float, str, list, tuple, dict, set, bool, complex.</li>
+  
+  
+  
+  <li><strong>What is a lambda function?</strong><br>It is an anonymous function expressed as a single statement using the lambda keyword.</li>
+  <li><strong>What are Python decorators?</strong><br>Functions that modify the behavior of other functions or methods.</li>
+  <li><strong>How is memory managed in Python?</strong><br>Python uses reference counting and a garbage collector to manage memory automatically.</li>
+  <li><strong>What is the Global Interpreter Lock (GIL)?</strong><br>GIL is a mutex that protects access to Python objects, preventing multiple threads from executing Python bytecodes simultaneously.</li>
+  <li><strong>What is list comprehension?</strong><br>A concise way to create lists using a single line of code.</li>
+  <li><strong>How can you handle exceptions in Python?</strong><br>Using try, except, else, and finally blocks.</li>
+  <li><strong>What is the difference between 'append()' and 'extend()' in lists?</strong><br>'append()' adds a single element, 'extend()' adds multiple elements from an iterable.</li>
+  <li><strong>What are generators in Python?</strong><br>Functions that return an iterator and generate values on the fly using the yield statement.</li>
+  <li><strong>What is the difference between 'pass', 'continue', and 'break'?</strong><br>'pass' does nothing, 'continue' skips to next iteration, 'break' exits the loop.</li>
+  <li><strong>What is slicing in Python?</strong><br>Extracting a part of a list, tuple, or string using start:stop:step syntax.</li>
+  <li><strong>How do you install external Python packages?</strong><br>Using pip, the Python package installer (e.g., pip install package_name).</li>
+  <li><strong>What is a Python module and package?</strong><br>A module is a single Python file; a package is a collection of modules in directories with __init__.py file.</li>
+  <li><strong>What is the difference between 'is' and '==' in Python?</strong><br>'is' compares identities, '==' compares values.</li>
+  <li><strong>How to read and write files in Python?</strong><br>Using open() with modes like 'r', 'w', 'a', and using read(), write() methods.</li>
+  <li><strong>What is the use of 'self' in Python class methods?</strong><br>'self' represents the instance of the class and is used to access instance variables.</li>
+  <li><strong>What are Python's built-in data structures?</strong><br>List, tuple, set, dictionary.</li>
+  <li><strong>What is the difference between mutable and immutable objects?</strong><br>Mutable objects can be changed after creation; immutable objects cannot.</li>
+  <li><strong>What are Python's boolean operators?</strong><br>and, or, not.</li>
+  <li><strong>What is the difference between range() and xrange()?</strong><br>In Python 3, xrange() is removed; range() returns an immutable sequence of numbers.</li>
+  <li><strong>How do you create a virtual environment in Python?</strong><br>Using the venv module: python -m venv env_name</li>
+
+      
+    </ol>
+  </section>  <hr>  <section>
+    <h2>50 Python Programs with Code</h2>
+    <ol>
+      <li>
+        <strong>Reverse a String</strong>
+        <pre><code>def reverse_string(s):
+    return s[::-1]print(reverse_string("hello"))</code></pre> </li> <li> <strong>Check for Prime Number</strong> <pre><code>def is_prime(n): if n < 2: return False for i in range(2, int(n**0.5) + 1): if n % i == 0: return False return True
+
+print(is_prime(17))</code></pre> </li> <li> <strong>Fibonacci Series</strong> <pre><code>def fibonacci(n): a, b = 0, 1 for _ in range(n): print(a, end=" ") a, b = b, a + b
+
+fibonacci(10)</code></pre> </li> <li> <strong>Factorial using recursion</strong> <pre><code>def factorial(n): if n == 0: return 1 else: return n * factorial(n-1)
+
+print(factorial(5))</code></pre> </li> <li> <strong>Palindrome Check</strong> <pre><code>def is_palindrome(s): return s == s[::-1]
+
+print(is_palindrome("radar"))</code></pre> </li> 
+<ol>
+  <li>
+    <strong>Reverse a String</strong>
+    <pre><code>def reverse_string(s):
+    return s[::-1]
+print(reverse_string("hello"))</code></pre>
+  </li>
+  <li>
+    <strong>Check for Prime Number</strong>
+    <pre><code>def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+print(is_prime(17))</code></pre>
+  </li>
+  <li>
+    <strong>Fibonacci Series</strong>
+    <pre><code>def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        print(a, end=" ")
+        a, b = b, a + b
+
+fibonacci(10)</code></pre>
+  </li>
+  <li>
+    <strong>Factorial using recursion</strong>
+    <pre><code>def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+print(factorial(5))</code></pre>
+  </li>
+  <li>
+    <strong>Palindrome Check</strong>
+    <pre><code>def is_palindrome(s):
+    return s == s[::-1]
+
+print(is_palindrome("radar"))</code></pre>
+  </li>
+  
+  <!-- New 30 Python Programs -->
+  
+  <li>
+    <strong>Sum of Natural Numbers</strong>
+    <pre><code>def sum_natural(n):
+    return n * (n + 1) // 2
+
+print(sum_natural(10))</code></pre>
+  </li>
+  <li>
+    <strong>Find Largest Number in List</strong>
+    <pre><code>def find_largest(lst):
+    return max(lst)
+
+print(find_largest([1, 5, 3, 9, 2]))</code></pre>
+  </li>
+  <li>
+    <strong>Check Even or Odd</strong>
+    <pre><code>def is_even(n):
+    return n % 2 == 0
+
+print(is_even(4))</code></pre>
+  </li>
+  <li>
+    <strong>Count Vowels in a String</strong>
+    <pre><code>def count_vowels(s):
+    vowels = "aeiouAEIOU"
+    return sum(1 for char in s if char in vowels)
+
+print(count_vowels("Hello World"))</code></pre>
+  </li>
+  <li>
+    <strong>Print Multiplication Table</strong>
+    <pre><code>def multiplication_table(n):
+    for i in range(1, 11):
+        print(f"{n} x {i} = {n*i}")
+
+multiplication_table(5)</code></pre>
+  </li>
+  <li>
+    <strong>Check Armstrong Number</strong>
+    <pre><code>def is_armstrong(n):
+    digits = [int(d) for d in str(n)]
+    power = len(digits)
+    return n == sum(d**power for d in digits)
+
+print(is_armstrong(153))</code></pre>
+  </li>
+  <li>
+    <strong>Convert Celsius to Fahrenheit</strong>
+    <pre><code>def celsius_to_fahrenheit(c):
+    return (c * 9/5) + 32
+
+print(celsius_to_fahrenheit(37))</code></pre>
+  </li>
+  <li>
+    <strong>Find GCD of Two Numbers</strong>
+    <pre><code>def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+print(gcd(48, 18))</code></pre>
+  </li>
+  <li>
+    <strong>Find LCM of Two Numbers</strong>
+    <pre><code>def lcm(a, b):
+    def gcd(x, y):
+        while y:
+            x, y = y, x % y
+        return x
+    return a * b // gcd(a, b)
+
+print(lcm(12, 18))</code></pre>
+  </li>
+  <li>
+    <strong>Check Leap Year</strong>
+    <pre><code>def is_leap_year(year):
+    return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+
+print(is_leap_year(2020))</code></pre>
+  </li>
+  <li>
+    <strong>Find Factorial using Iteration</strong>
+    <pre><code>def factorial_iter(n):
+    result = 1
+    for i in range(2, n+1):
+        result *= i
+    return result
+
+print(factorial_iter(5))</code></pre>
+  </li>
+  <li>
+    <strong>Sum of Digits of a Number</strong>
+    <pre><code>def sum_digits(n):
+    return sum(int(d) for d in str(n))
+
+print(sum_digits(12345))</code></pre>
+  </li>
+  <li>
+    <strong>Find Second Largest Number in List</strong>
+    <pre><code>def second_largest(lst):
+    unique = list(set(lst))
+    unique.sort()
+    return unique[-2] if len(unique) >= 2 else None
+
+print(second_largest([1, 3, 5, 3, 9, 7]))</code></pre>
+  </li>
+  <li>
+    <strong>Remove Duplicates from List</strong>
+    <pre><code>def remove_duplicates(lst):
+    return list(set(lst))
+
+print(remove_duplicates([1, 2, 2, 3, 4, 4, 5]))</code></pre>
+  </li>
+  <li>
+    <strong>Check if String is Anagram</strong>
+    <pre><code>def is_anagram(s1, s2):
+    return sorted(s1) == sorted(s2)
+
+print(is_anagram("listen", "silent"))</code></pre>
+  </li>
+  <li>
+    <strong>Merge Two Dictionaries</strong>
+    <pre><code>def merge_dicts(d1, d2):
+    return {**d1, **d2}
+
+print(merge_dicts({'a':1}, {'b':2}))</code></pre>
+  </li>
+  <li>
+    <strong>Find the Length of a List</strong>
+    <pre><code>def length(lst):
+    return len(lst)
+
+print(length([1,2,3,4]))</code></pre>
+  </li>
+  <li>
+    <strong>Check if Number is Positive, Negative or Zero</strong>
+    <pre><code>def check_number(n):
+    if n > 0:
+        return "Positive"
+    elif n < 0:
+        return "Negative"
+    else:
+        return "Zero"
+
+print(check_number(-10))</code></pre>
+  </li>
+  <li>
+    <strong>Print Even Numbers in a List</strong>
+    <pre><code>def print_even(lst):
+    return [x for x in lst if x % 2 == 0]
+
+print(print_even([1,2,3,4,5,6]))</code></pre>
+  </li>
+  <li>
+    <strong>Calculate Power of a Number</strong>
+    <pre><code>def power(base, exp):
+    return base ** exp
+
+print(power(2, 3))</code></pre>
+  </li>
+  <li>
+    <strong>Find ASCII Value of a Character</strong>
+    <pre><code>def ascii_val(c):
+    return ord(c)
+
+print(ascii_val('A'))</code></pre>
+  </li>
+  <li>
+    <strong>Check if String Contains Only Digits</strong>
+    <pre><code>def is_digit_str(s):
+    return s.isdigit()
+
+print(is_digit_str("12345"))</code></pre>
+  </li>
+  <li>
+    <strong>Find the Minimum and Maximum in a List</strong>
+    <pre><code>def min_max(lst):
+    return min(lst), max(lst)
+
+print(min_max([5,2,9,1,7]))</code></pre>
+  </li>
+  <li>
+    <strong>Calculate the Average of Numbers in a List</strong>
+    <pre><code>def average(lst):
+    return sum(lst) / len(lst)
+
+print(average([10,20,30,40]))</code></pre>
+  </li>
+  <li>
+    <strong>Check if Two Strings are Equal</strong>
+    <pre><code>def strings_equal(s1, s2):
+    return s1 == s2
+
+print(strings_equal("hello", "hello"))</code></pre>
+  </li>
+  <li>
+    <strong>Count Words in a String</strong>
+    <pre><code>def count_words(s):
+    return len(s.split())
+
+print(count_words("Hello world from Python"))</code></pre>
+  </li>
+  <li>
+    <strong>Convert List of Integers to String</strong>
+    <pre><code>def list_to_string(lst):
+    return ''.join(str(i) for i in lst)
+
+print(list_to_string([1,2,3]))</code></pre>
+  </li>
+  <li>
+    <strong>Find Common Elements in Two Lists</strong>
+    <pre><code>def common_elements(lst1, lst2):
+    return list(set(lst1) & set(lst2))
+
+print(common_elements([1,2,3], [2,3,4]))</code></pre>
+  </li>
+  <li>
+    <strong>Check if List is Sorted</strong>
+    <pre><code>def is_sorted(lst):
+    return lst == sorted(lst)
+
+print(is_sorted([1,2,3,4]))</code></pre>
+  </li>
+  <li>
+    <strong>Remove Whitespace from String</strong>
+    <pre><code>def remove_whitespace(s):
+    return s.replace(" ", "")
+
+print(remove_whitespace("Hello World"))</code></pre>
+  </li>
+  
+
+</ol>
+
+  </section>  
+    <hr>
+    <h2>Visit: Syist.com</h2>
+    <p>This page is proudly presented by Syist Group. Master these questions & programs to crack your interview with confidence!</p>
+  
+  {% endblock %}
+</body>
