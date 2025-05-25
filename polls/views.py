@@ -35,3 +35,6 @@ def python(request):
 def project(request):
     return render(request,'project.html')
 
+def python_300_project(request):
+    return render(request,'python_300_project.html')
+
