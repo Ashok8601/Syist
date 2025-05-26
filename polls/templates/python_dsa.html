@@ -1,0 +1,149 @@
+{%  extends 'base.html'%}
+  {% block tittle%}DSA in Python - Core Level{% endblock %}
+  
+  {% block head_extra %}
+  <style>
+    body { font-family: Arial, sans-serif;  background-color: #f9f9f9; line-height: 1.6; }
+    h1, h2, h3 { color: #2c3e50; }
+    pre { background-color: #eee; padding: 10px; overflow-x: auto; }
+    code { font-family: Consolas, monospace; }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <h1>DSA in Python - Core Level</h1>  <h2>1. Arrays (Lists in Python)</h2>
+  <p>Arrays (lists in Python) support many operations:</p>
+  <pre><code># Initialization
+arr = [1, 2, 3, 4, 5]Access
+
+print(arr[2])  # 3
+
+Append
+
+arr.append(6)
+
+Insert
+
+arr.insert(2, 99)
+
+Remove
+
+arr.remove(3)
+
+Pop
+
+arr.pop()
+
+Index
+
+print(arr.index(99))
+
+Sort
+
+arr.sort()
+
+Reverse
+
+arr.reverse()
+
+Slice
+
+print(arr[1:4])</code></pre>
+
+  <h2>2. Heap</h2>
+  <pre><code>import heapqheap = [] heapq.heappush(heap, 10) heapq.heappush(heap, 1) heapq.heappush(heap, 5)
+
+print(heapq.heappop(heap))  # 1
+
+Max Heap
+
+max_heap = [-i for i in [10, 1, 5]] heapq.heapify(max_heap) print(-heapq.heappop(max_heap))  # 10</code></pre>
+
+  <h2>3. Linked List</h2>
+  <h3>Singly Linked List</h3>
+  <pre><code>class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = Noneclass LinkedList: def init(self): self.head = None
+
+def insert(self, data):
+    new_node = Node(data)
+    new_node.next = self.head
+    self.head = new_node</code></pre>
+
+  <h3>Doubly Linked List</h3>
+  <pre><code>class DNode:
+    def __init__(self, data):
+        self.data = data
+        self.prev = None
+        self.next = Noneclass DoublyLinkedList: def init(self): self.head = None
+
+def insert_front(self, data):
+    new = DNode(data)
+    new.next = self.head
+    if self.head:
+        self.head.prev = new
+    self.head = new</code></pre>
+
+  <h2>4. Hash Table (Dict)</h2>
+  <pre><code>hash_table = {}Insert
+
+hash_table['name'] = 'Ashok'
+
+Access
+
+print(hash_table['name'])
+
+Delete
+
+del hash_table['name']
+
+Check key
+
+if 'name' in hash_table: print("Found")</code></pre>
+
+  <h2>5. Searching Algorithms</h2>
+  <h3>Linear Search</h3>
+  <pre><code>def linear_search(arr, x):
+    for i in range(len(arr)):
+        if arr[i] == x:
+            return i
+    return -1</code></pre>  <h3>Binary Search</h3>
+  <pre><code>def binary_search(arr, x):
+    l, r = 0, len(arr) - 1
+    while l <= r:
+        mid = (l + r) // 2
+        if arr[mid] == x:
+            return mid
+        elif arr[mid] < x:
+            l = mid + 1
+        else:
+            r = mid - 1
+    return -1</code></pre>  <h2>6. Sorting Algorithms</h2>
+  <h3>Bubble Sort</h3>
+  <pre><code>def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]</code></pre>  <h3>Quick Sort</h3>
+  <pre><code>def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[0]
+    left = [x for x in arr[1:] if x <= pivot]
+    right = [x for x in arr[1:] if x > pivot]
+    return quick_sort(left) + [pivot] + quick_sort(right)</code></pre>  <h2>7. Interview Questions</h2>
+  <ol>
+    <li>Reverse a linked list</li>
+    <li>Detect a loop in linked list</li>
+    <li>Implement stack using queue</li>
+    <li>Find the missing number in array</li>
+    <li>Merge two sorted arrays</li>
+    <li>Find first non-repeating character</li>
+    <li>Check balanced parentheses</li>
+    <li>Infix to postfix conversion</li>
+    <li>Find kth largest element</li>
+    <li>Check for palindrome linked list</li>
+  </ol></body>
+{% endblock %}
