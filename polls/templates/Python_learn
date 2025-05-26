@@ -1,0 +1,366 @@
+{% extends 'base.html' %}
+    
+    {% block tittle %}Python Basic to Advanced Sikhe - Syist Group{% endblock %}
+    
+    {% block head_extra %}
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #222;
+            
+            max-width: 900px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+            color: #004080;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        pre {
+            background-color: #eee;
+            padding: 15px;
+            border-left: 5px solid #004080;
+            overflow-x: auto;
+            font-size: 16px;
+            line-height: 1.4;
+            font-family: Consolas, monospace;
+            margin-bottom: 20px;
+        }
+        code {
+            background-color: #d6e6f2;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #004080;
+            margin: 40px 0;
+        }
+        blockquote {
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #004080;
+            padding-left: 15px;
+            margin: 20px 0;
+            background-color: #f0f8ff;
+        }
+        .note {
+            background: #ffffcc;
+            border-left: 6px solid #ffcc00;
+            padding: 10px 20px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #333300;
+        }
+    </style>
+ {% endblock %}
+
+{% block content %}
+<h1>Python Basic to Advanced Sikhe by Syist Group</h1>
+<p>यह एक complete गाइड है जो आपको Python की शुरुआत से लेकर advanced concepts तक ले जाएगी। यहाँ theory, examples, codes, और tips सभी मिलेंगे। इसे ध्यान से पढ़ें और practice करें।</p>
+
+<hr />
+
+<h2>1. Python क्या है?</h2>
+<p>Python एक high-level, interpreted programming language है जो आसान syntax और powerful libraries के लिए जानी जाती है। यह beginner-friendly होने के साथ-साथ professional development के लिए भी उपयोगी है।</p>
+
+<h3>Python की खासियतें:</h3>
+<ul>
+    <li>Simple और readable syntax</li>
+    <li>Open-source और free</li>
+    <li>Cross-platform support (Windows, Mac, Linux)</li>
+    <li>Rich standard library</li>
+    <li>Dynamic typing</li>
+    <li>Large community और बहुत सारे frameworks</li>
+</ul>
+
+<hr />
+
+<h2>2. Python Installation और Setup</h2>
+<p>Python की official website से Python डाउनलोड करें: <a href="https://www.python.org/downloads/" target="_blank">python.org/downloads</a></p>
+<p>Installation के बाद command prompt या terminal में `python --version` टाइप करके verify करें।</p>
+
+<hr />
+
+<h2>3. Python Syntax और Basic Concepts</h2>
+
+<h3>3.1 Hello World प्रोग्राम</h3>
+<pre><code>print("Hello, World!")</code></pre>
+
+<h3>3.2 Variables और Data Types</h3>
+<p>Python में variables बिना explicit declaration के बन जाते हैं, और data types जैसे integer, float, string, boolean होते हैं।</p>
+<pre><code>
+a = 10          # Integer
+b = 5.5         # Float
+name = "Ashok"  # String
+flag = True     # Boolean
+</code></pre>
+
+<h3>3.3 Comments</h3>
+<pre><code>
+# यह एक single line comment है
+
+'''
+यह
+multi-line
+comment है
+'''
+</code></pre>
+
+<hr />
+
+<h2>4. Control Flow Statements</h2>
+
+<h3>4.1 If-Else Statements</h3>
+<pre><code>
+age = 18
+if age >= 18:
+    print("आप वोट दे सकते हैं।")
+else:
+    print("आप वोट नहीं दे सकते।")
+</code></pre>
+
+<h3>4.2 Loops</h3>
+
+<h4>For Loop</h4>
+<pre><code>
+for i in range(5):
+    print(i)
+</code></pre>
+
+<h4>While Loop</h4>
+<pre><code>
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+</code></pre>
+
+<hr />
+
+<h2>5. Functions</h2>
+<p>Functions reusable code blocks होते हैं जिन्हें नाम देकर बुलाया जाता है।</p>
+<pre><code>
+def greet(name):
+    print(f"नमस्ते, {name}!")
+
+greet("Ashok")
+</code></pre>
+
+<hr />
+
+<h2>6. Data Structures</h2>
+
+<h3>6.1 Lists (सूची)</h3>
+<pre><code>
+fruits = ["सेब", "केला", "अंगूर"]
+print(fruits[0])   # सेब
+fruits.append("आम")
+</code></pre>
+
+<h3>6.2 Tuples (ट्यूपल)</h3>
+<pre><code>
+coordinates = (10, 20)
+print(coordinates[1])  # 20
+</code></pre>
+
+<h3>6.3 Dictionaries (शब्दकोश)</h3>
+<pre><code>
+student = {"नाम": "Ashok", "उम्र": 21}
+print(student["नाम"])
+student["कक्षा"] = "B.Tech"
+</code></pre>
+
+<h3>6.4 Sets (सेट)</h3>
+<pre><code>
+numbers = {1, 2, 3, 2, 1}
+print(numbers)  # {1, 2, 3}
+</code></pre>
+
+<hr />
+
+<h2>7. File Handling (फाइल प्रबंधन)</h2>
+<p>Python में फाइल पढ़ने और लिखने के लिए open(), read(), write() functions का उपयोग होता है।</p>
+
+<pre><code>
+# फाइल में लिखना
+with open("data.txt", "w") as file:
+    file.write("यह एक लाइन है।")
+
+# फाइल पढ़ना
+with open("data.txt", "r") as file:
+    content = file.read()
+    print(content)
+</code></pre>
+
+<hr />
+
+<h2>8. Exception Handling (त्रुटि प्रबंधन)</h2>
+<p>Errors को handle करने के लिए try-except block का उपयोग करें।</p>
+
+<pre><code>
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("शून्य से भाग नहीं हो सकता!")
+</code></pre>
+
+<hr />
+
+<h2>9. Object-Oriented Programming (OOP)</h2>
+
+<h3>9.1 Class और Object</h3>
+<pre><code>
+class Car:
+    def __init__(self, model, color):
+        self.model = model
+        self.color = color
+
+    def drive(self):
+        print(f"{self.model} चल रहा है।")
+
+car1 = Car("Tesla", "लाल")
+car1.drive()
+</code></pre>
+
+<hr />
+
+<h2>10. Modules और Packages</h2>
+<p>Python में code को modules और packages में organize किया जाता है। Import करके इस्तेमाल करते हैं।</p>
+
+<pre><code>
+import math
+
+print(math.sqrt(16))  # 4.0
+</code></pre>
+
+<hr />
+
+<h2>11. Popular Libraries</h2>
+
+<h3>11.1 NumPy (Scientific Computing)</h3>
+<pre><code>
+import numpy as np
+
+arr = np.array([1, 2, 3])
+print(arr * 2)  # [2 4 6]
+</code></pre>
+
+<h3>11.2 Pandas (Data Analysis)</h3>
+<pre><code>
+import pandas as pd
+
+data = {'नाम': ['Ashok', 'Rahul'], 'उम्र': [21, 22]}
+df = pd.DataFrame(data)
+print(df)
+</code></pre>
+
+<h3>11.3 Matplotlib (Data Visualization)</h3>
+<pre><code>
+import matplotlib.pyplot as plt
+
+plt.plot([1, 2, 3], [4, 5, 6])
+plt.show()
+</code></pre>
+
+<h3>11.4 Flask (Web Development)</h3>
+<pre><code>
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "नमस्ते Flask!"
+
+if __name__ == '__main__':
+    app.run(debug=True)
+</code></pre>
+
+<hr />
+
+<h2>12. Advanced Topics</h2>
+
+<h3>12.1 Generators</h3>
+<p>Generators lazy evaluation करते हैं और memory बचाते हैं।</p>
+<pre><code>
+def gen():
+    yield 1
+    yield 2
+    yield 3
+
+for i in gen():
+    print(i)
+</code></pre>
+
+<h3>12.2 Decorators</h3>
+<p>Functions को modify करने के लिए decorators का उपयोग।</p>
+<pre><code>
+def decorator_func(func):
+    def wrapper():
+        print("Function से पहले का काम")
+        func()
+        print("Function के बाद का काम")
+    return wrapper
+
+@decorator_func
+def say_hello():
+    print("नमस्ते!")
+
+say_hello()
+</code></pre>
+
+<h3>12.3 Lambda Functions</h3>
+<pre><code>
+square = lambda x: x * x
+print(square(5))  # 25
+</code></pre>
+
+<h3>12.4 List Comprehensions</h3>
+<pre><code>
+squares = [x * x for x in range(5)]
+print(squares)  # [0, 1, 4, 9, 16]
+</code></pre>
+
+<hr />
+
+<h2>13. Best Practices</h2>
+<ul>
+    <li>Code को comments और docstrings से document करें।</li>
+    <li>Meaningful variable names का उपयोग करें।</li>
+    <li>Functions को छोटा और modular रखें।</li>
+    <li>Exception handling करें।</li>
+    <li>Code को test करें।</li>
+    <li>Python की PEP 8 style guide को follow करें।</li>
+</ul>
+
+<hr />
+
+<h2>14. Python सीखने के लिए Resources</h2>
+<ul>
+    <li>Official Documentation: <a href="https://docs.python.org/3/" target="_blank">docs.python.org</a></li>
+    <li>FreeCodeCamp, W3Schools, TutorialsPoint वेबसाइट</li>
+    <li>YouTube Tutorials - Corey Schafer, Telusko</li>
+    <li>Practice on HackerRank, LeetCode, Codewars</li>
+    <li>Books: "Automate the Boring Stuff with Python" by Al Sweigart</li>
+</ul>
+
+<hr />
+
+<h2>visit syist Group courses </h2>
+<p>Python सीखना एक continuous journey है। रोज practice करें, छोटे-छोटे projects बनाएं, और community में active रहें।</p>
+<p>आशा करता हूँ यह गाइड आपके लिए उपयोगी साबित होगी। शुभकामनाएँ! Syist Group par सभी प्रोग्रामिंग लैंग्वेज का बेसिक से कोर 
+ लेवल  की पोस्ट है </p>
+
+{% endblock %}
