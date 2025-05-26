@@ -37,4 +37,8 @@ def project(request):
 
 def python_300_project(request):
     return render(request,'python_300_project.html')
+def python_learn(request):
+    return render(request,'python_learn.html')
+def python_dsa(request):
+    return render(request,'python_dsa.html')
 
