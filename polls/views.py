@@ -41,4 +41,7 @@ def python_learn(request):
     return render(request,'python_learn.html')
 def python_dsa(request):
     return render(request,'python_dsa.html')
+def web(request):
+    return render(request,'web.html')
+
 
