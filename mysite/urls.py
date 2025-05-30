@@ -37,4 +37,5 @@ urlpatterns = [
     path('python_300_project/', views.python_300_project, name='python_300_project'),
     path('python_learn/', views.python_learn, name='python_learn'),
     path('python_dsa/', views.python_dsa, name='python_dsa'),
+    path('web/', views.web, name='web'),
 ]
