@@ -1,3 +1,4 @@
 User-agent: *
-Allow: /
-Sitemap: https://syist-group.onrender.com/sitemap.xml
+Disallow:
+
+Sitemap: https://syist.onrender.com/sitemap.xml
