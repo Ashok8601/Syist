@@ -24,7 +24,7 @@ def robots_txt(request):
     lines = [
         "User-agent: *",
         "Allow: /",
-        "Sitemap: https://syist-group.onrender.com/sitemap.xml"
+        "Sitemap: https://syist.onrender.com/sitemap.xml"
     ]
     return HttpResponse("\n".join(lines), content_type="text/plain")
 def indo_pak(request):
